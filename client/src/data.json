@@ -10,7 +10,7 @@
  {
     "id":"id2",
     "title":"Product 2",
-    "imageUrl":"/images/1.jpg",
+    "imageUrl":"/images/2.jpg",
     "desc":"This is Product2",
     "price":200,
     "sizes":["XL","L"]
