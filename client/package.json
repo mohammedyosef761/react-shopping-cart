@@ -15,11 +15,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "sass":"gulp watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "sass":"gulp watch"
+    "eject": "react-scripts eject"
+  
   },
   "eslintConfig": {
     "extends": [
