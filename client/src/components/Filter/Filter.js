@@ -5,7 +5,7 @@ const Filter = (props) => {
   return (
   <div className='filter-wrapper'>
   <h2 className='filter-title'> Filter Comp </h2> 
-  <div className='num-of-products'>Number of Products 4</div>
+  <div className='num-of-products'>Number of Products {props.productNumber}</div>
   <div className='filter-by-size'>
       <span>Filter</span>
       <select value={props.size} className='filter-select'  onChange={props.handleFilterBySize}>
