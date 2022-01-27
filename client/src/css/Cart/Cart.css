@@ -36,3 +36,23 @@
   border-radius: 6px;
   cursor: pointer;
 }
+
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.cart-footer span {
+  font-size: 25px;
+}
+
+button {
+  display: inline-block;
+  border: 0;
+  background: #2a5ea5;
+  color: #fff;
+  padding: 7px;
+  border-radius: 6px;
+  cursor: pointer;
+}
