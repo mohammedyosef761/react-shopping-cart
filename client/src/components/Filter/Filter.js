@@ -1,9 +1,12 @@
 import React from 'react';
-import '../../css/Filter/Filter.css'
+import '../../css/Filter/Filter.css';
+import Flip from 'react-reveal/Flip';
+
 
 const Filter = (props) => {
   return (
-  <div className='filter-wrapper'>
+ <Flip>
+ <div className='filter-wrapper'>
   <h2 className='filter-title'> Filter Comp </h2> 
   <div className='num-of-products'>Number of Products {props.productNumber}</div>
   <div className='filter-by-size'>
@@ -29,6 +32,8 @@ const Filter = (props) => {
   </div>
   
   </div>
+
+ </Flip>
   );
 };
 

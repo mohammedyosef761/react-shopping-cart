@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import '../../css/Cart/Cart.css';
-import Checkout from '../CheckoutForm/Checkout'
+import Checkout from '../CheckoutForm/Checkout';
+import Bounce from 'react-reveal/Bounce';
  
 const Cart = (props) => {
   
@@ -23,10 +24,12 @@ const Cart = (props) => {
   }
 
   return (
-  <div className='cart-wrapper'>
+       
+          <div className='cart-wrapper'>
       <div className='cart-title'>{props.cartItems.length ===0 ?'Cart Empty':<p>
       There is {props.cartItems.length}{props.cartItems.length===1? " item":" items"} in Cart
       </p>}</div>
+      <Bounce left cascade>
       <div className='cart-items'>
           {props.cartItems.map(item =>(
             <div className='cart-item' key={item.id}>
@@ -42,6 +45,8 @@ const Cart = (props) => {
             </div>
          ))}
       </div>
+      </Bounce>
+
 {      
   props.cartItems.length !== 0  && (<div className='cart-footer'>
             <div className='total'>Total : $ {props.cartItems.reduce( (acc,p)=>{
@@ -60,8 +65,9 @@ const Cart = (props) => {
        value={value}
 
        />
-
   </div>
+         
+       
   );
 };
 
